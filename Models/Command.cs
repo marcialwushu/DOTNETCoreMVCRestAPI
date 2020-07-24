@@ -1,12 +1,11 @@
-namespace Command.using System;
+namespace Commander.Models
 
-namespace Commander.Models.Models
 {
     public class Command
     {
-        public Command()
-        {
-            Console.WriteLine("Empty Class");
-        }
+        public int Id { get; set; }
+        public string HowTo { get; set; }
+        public string Line { get; set; }
+        public string Platform { get; set; }
     }
 }

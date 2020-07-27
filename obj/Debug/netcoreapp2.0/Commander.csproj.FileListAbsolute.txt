@@ -1,0 +1,3 @@
+C:\Users\carlosjunior\Documents\Workspace\DOTNET\Commander\obj\Debug\netcoreapp2.0\Commander.csproj.CoreCompileInputs.cache
+C:\Users\carlosjunior\Documents\Workspace\DOTNET\Commander\obj\Debug\netcoreapp2.0\Commander.AssemblyInfoInputs.cache
+C:\Users\carlosjunior\Documents\Workspace\DOTNET\Commander\obj\Debug\netcoreapp2.0\Commander.AssemblyInfo.cs

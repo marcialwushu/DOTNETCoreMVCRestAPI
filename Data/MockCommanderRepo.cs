@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using Commander.Models;
 
@@ -6,9 +7,13 @@ namespace Commander.Data
 {
     public class MockCommanderRepo : ICommanderRepo
     {
-        
+        public MockCommanderRepo()
+        {
+        }
+
         public IEnumerable<Command> GetAppCommands()
         {
+            
             var commands = new List<Command>
             {
                 new Command{Id=0, HowTo="Boil an egg", Line="Boil water", Platform="Kettle & Pan"},
@@ -19,9 +24,21 @@ namespace Commander.Data
             return commands;
         }
 
+      
+
         public Command GetCommandById(int id)
         {
             return new Command{Id=0, HowTo="Boil an egg", Line="Boil water", Platform="Kettle & Pan"};
+        }
+
+        IEnumerable<Command> ICommanderRepo.GetAppCommands()
+        {
+            throw new NotImplementedException();
+        }
+
+        Command ICommanderRepo.GetComandById(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }
